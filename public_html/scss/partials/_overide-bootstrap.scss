@@ -1,0 +1,23 @@
+html{
+    font-size: 10px; //Ovim se postavlja osnovna veličina fonta za ceo dokument na 10 piksela.
+}
+$font-size-base: 1.6rem; // rem je relativna jedinica koja se odnosi na veličinu fonta postavljenu na elementu <html>. Pošto je font-size za <html> postavljen na 10px, vrednost 1.6rem će biti: 1.6 x 10px = 16px;
+
+//ovo moramo ovde da definisemo jer ako stavimo da se ucitava u bootsrapu  koji se u theme.scss ucitava posle ovog fajla, on ce da nam generise one koje su tamo napisane vrednosti, a ovde mozemo da ih izmenimo, zato i pravimo ovaj overide, u njemu vrsimo izmene nad bootsrtap koji smo skinuli i menjamo.. tako da ce onda ono sto mi promenimo da boostrap koristi u radu, tj. kompajliranju
+//ovim smo postavili da nam je 1rem 10px!
+
+$blue: #1A77CD;
+$grid-gutter-width:2.4rem;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px//1320px
+);
+
+$h1-font-size: 5rem;
+$h2-font-size: 3.6rem;
+$body-color: #000;
+$dark-blue: #11284B;
+ 
