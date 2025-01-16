@@ -1,0 +1,16 @@
+.service-section{
+    padding: 11rem 0 11.3rem; //ovo znaci da sekciji dajemo podding 110rem gore; levo i desno 0; i dole 113px;
+    .service-section-title{
+        margin-bottom: 6.1rem;
+    }
+    .service-item{
+        margin-bottom: 2rem;
+        .service-item-title{
+            color: #000;
+            text-transform: uppercase;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}
