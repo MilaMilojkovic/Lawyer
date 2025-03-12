@@ -1,4 +1,4 @@
-$(document).ready(function){
+$(document).ready(function(){
 
 
 //ANIMATION
@@ -59,6 +59,28 @@ $(document).ready(function){
                 error.appendTo(element.closest(".form-group").find(".error-msg"));
             }
         });
-
     }
+
+    if ($('.team-slider').length > 0) {
+        $('.team-slider').owlCarousel({
+            loop: true,
+            dots: true,
+            nav: false,
+            dotsEach: 3,
+            responsive: {
+                0: {
+                    items: 1,
+                    dotsEach: 0
+                },
+                992: {
+                    items: 2,
+                    nav: false,
+                    margin: 24
+                }
+            }
+        });
+    }
+
+
 }
+);

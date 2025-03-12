@@ -1,0 +1,61 @@
+.team-section{
+    padding: 8.1rem 0 6.8rem; //padding smo izmerili tako sto nam je h2 tag prvi i njega smo pretisnuli dok smo drzali alt i isli do gornje ivuce sekcije koja je iznosila 81px, a zatim istim tim postupkom poslednji elemant u sekciji do kraja sekcije, u ovom slucaju je bila navigacija sa tri tacke i iznasi 68px, sto znaci da je ovo neki carousel
+    // background-color: #F6F5F6; //ovo je prvi nacin; background-color: #F6F5F6; a drugi bi bio da u variablama nadjemo grey i da joj promenimo vrednost u overide fajlu; $gray-100: #F6F5F6; i da sekciji u htmlu dodelimo bg-light; a ovde da ne pisemo background-color;
+    .team-section-title{
+        margin-bottom: 6.1rem;
+    }
+  
+
+
+    .team-member{
+      
+        .team-member-title{
+            margin-bottom: 5rem;
+        }
+        
+        .team-member-description{
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        } //ne radi
+        .team-member-linkedin{
+            color: #444;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            @media(min-width:576px){
+                margin-bottom: 0;
+            }
+            &:hover{
+                color: $primary;
+            }
+        }
+        .team-member-image{
+            overflow: hidden !important;
+            display: block !important;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                display: block;
+                width: 100%;
+                transition: 0.3s linear;
+            }
+        }
+    }
+    .team-slider{
+        padding-bottom: 14rem;
+    }
+    .owl-dots {
+    position: absolute;
+    bottom: -35px; //pomeri dole
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+   
+
+
+}
