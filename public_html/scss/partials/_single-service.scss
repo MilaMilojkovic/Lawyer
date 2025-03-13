@@ -1,0 +1,22 @@
+.single-service-section{
+    padding: 10.6rem 0 10.8rem; // povecali smo stranicu
+    .single-service-image{
+        position: sticky;
+        -webkit-position: sticky;
+        top:0; //ove tri klase omogucavaju da ako nam je tekst veci od slike, da tokom skrola slika ide na dole, takodje smo morali h-100 klasu na figure tagu da sklonimo da bi bilo funkcionlno
+        img{
+            width: 100%; //da na svakom break pointu zauzima celu sirinu
+            display: block; //da se osiguramo da ostane block
+        }
+    }
+    .single-service-data{
+        h2{
+            margin-bottom: 2.6rem; // udaljili smo naslov od paragrafa
+        }
+        ul{
+           list-style: none; 
+           padding-left: 0;
+        }
+    }
+}
+
