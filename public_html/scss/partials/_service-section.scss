@@ -1,3 +1,4 @@
+$dark-services-bg: $dark-blue;
 .service-section{
     padding: 11rem 0 11.3rem; //ovo znaci da sekciji dajemo podding 110rem gore; levo i desno 0; i dole 113px;
     .service-section-title{
@@ -8,8 +9,24 @@
         .service-item-title{
             color: #000;
             text-transform: uppercase;
+            padding-left: 1.2rem; //ovim udaljavamo naslov od ikonice koje su jedna do druge
             &:hover{
                 color: $blue;
+            }
+        }
+    }
+    
+    &.dark-services-section{
+        background-color: $dark-services-bg;
+        .service-section-title{
+            color: $primary;
+        }
+        .service-item{
+            .service-item-title{
+                color: #fff;
+                &:hover{
+                    color: $primary;
+                }
             }
         }
     }
