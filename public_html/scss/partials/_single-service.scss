@@ -3,7 +3,7 @@
     .single-service-image{
         position: sticky;
         -webkit-position: sticky;
-        top:0; //ove tri klase omogucavaju da ako nam je tekst veci od slike, da tokom skrola slika ide na dole, takodje smo morali h-100 klasu na figure tagu da sklonimo da bi bilo funkcionlno
+        top:0; //ove tri klase positon, -webkit, top; omogucavaju da ako nam je tekst veci od slike, da tokom skrola slika ide na dole, takodje smo morali h-100 klasu na figure tagu da sklonimo da bi bilo funkcionlno
         img{
             width: 100%; //da na svakom break pointu zauzima celu sirinu
             display: block; //da se osiguramo da ostane block
